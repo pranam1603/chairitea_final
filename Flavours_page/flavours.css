@@ -1,0 +1,605 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+nav.navbar {
+  margin: 0px;
+  padding: 0px;
+  align-items: center;
+  transition: all 1s ease;
+  background-color: transparent;
+  font-family: sans-serif;
+  font-weight: bold;
+  z-index: 10;
+}
+
+nav.slide_down_black {
+  background-color: black;
+  position: fixed;
+  height: 120px;
+  width: 100%;
+  top: 0px;
+  opacity: 0.8;
+  z-index: 20;
+}
+
+nav.container-fluid {
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+img#logoImage {
+  width: 150px;
+  margin: 5px 60px 5px 30px;
+}
+
+nav button.navbar-toggler {
+  background-color: rgb(170, 81, 9);
+}
+
+nav div.float-right {
+  justify-content: flex-end;
+}
+
+nav ul#navbar-ul {
+  margin: 10px 40px 10px 10px;
+}
+
+nav li.nav-item {
+  padding: 0px 5px;
+  margin: 5px 15px;
+  text-align: center;
+}
+
+nav.navbar-link-color .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.808);
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 7px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: white;
+  border-bottom: 1px solid white;
+  border-radius: 2px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: white;
+  background-color: #f88b07;
+  border-radius: 3px;
+}
+
+img.flavour_header_image {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  height: 100vh;
+  object-fit: cover;
+}
+
+hr {
+  margin: 2px;
+  color: white;
+  opacity: 0.3;
+  z-index: 40;
+}
+
+/* flavour cup images  */
+.header_teaflavourcup {
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  margin: 0px;
+  padding: 5px;
+  top: 430px;
+  width: 100%;
+  height: auto;
+}
+
+.teacup_wrap {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 10x;
+}
+
+.header_teaflavourcup img.adrak_teacup {
+  max-width: 300px;
+  min-width: 80px;
+  height: auto;
+}
+
+.header_teaflavourcup img.elaichi_teacup {
+  max-width: 300px;
+  min-width: 80px;
+  height: auto;
+}
+
+.header_teaflavourcup img.coffee_teacup {
+  max-width: 300px;
+  min-width: 80px;
+  height: auto;
+}
+
+.header_teaflavourcup img.masbun_teacup {
+  max-width: 300px;
+  min-width: 80px;
+  height: auto;
+}
+
+/* header text animation  */
+.header_text {
+  position: absolute;
+  top: 200px;
+  margin-left: 250px;
+  font-size: 5rem;
+  animation: h_text_translate 2s ease-in-out;
+}
+
+@keyframes h_text_translate {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 250px;
+  }
+}
+
+.header_text .header_text_wrapper {
+  position: relative;
+  display: inline-block;
+  color: floralwhite;
+  text-transform: uppercase;
+  padding-top: 0.2rem;
+  padding-right: 0.05rem;
+  padding-bottom: 0.1rem;
+  overflow: hidden;
+}
+
+.header_text .header_text_letters {
+  display: inline-block;
+  line-height: 1rem;
+}
+
+@media (max-width: 1024px) {
+  img.flavour_header_image {
+    height: 55vw;
+  }
+
+
+/* flavour cup images  */
+  .header_teaflavourcup {
+    top: 375px;
+  }
+
+
+  /* header text animation  */
+  .header_text {
+    top: 180px;
+    margin-left: 150px;
+    font-size: 4rem;
+    animation: h_text_translate 2s ease-in-out;
+  }
+
+  @keyframes h_text_translate {
+    from {
+      margin-left: 0px;
+    }
+    to {
+      margin-left: 150px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  nav button.navbar-toggler {
+    margin-right: 25px;
+  }
+
+  nav div .slide-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    position: absolute;
+    background: rgb(20, 7, 1);
+    top: 110px;
+    left: 10%;
+    width: 80%;
+    transition: all 0.5s ease;
+    z-index: 100;
+  }
+
+  nav ul#navbar-ul {
+    margin: 15px 15px 15px 15px;
+  }
+
+  img#logoImage {
+    width: 140px;
+  }
+
+  nav.navbar-link-color .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.808);
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 7px;
+  }
+
+  .navbar-dark .navbar-nav .nav-link.active {
+    color: white;
+    border-bottom: 1px solid white;
+    border-radius: 2px;
+  }
+
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: white;
+    background-color: none;
+    background: none;
+  }
+
+  nav.slide_down_black {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  nav button.navbar-toggler {
+    margin-right: 20px;
+  }
+
+  nav div .slide-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    position: fixed;
+    background: rgb(20, 7, 1);
+    top: 105px;
+    left: 10%;
+    width: 80%;
+    transition: all 0.5s ease;
+  }
+
+  img#logoImage {
+    width: 130px;
+    margin: 5px 30px 5px 25px;
+  }
+
+  nav ul li a.active {
+    border: none;
+    color: white;
+  }
+
+  nav ul li a:hover {
+    border: none;
+    color: white;
+    background-color: transparent;
+  }
+
+  nav.slide_down_black {
+    display: none;
+  }
+
+  img.flavour_header_image {
+    height: 65vw;
+  }
+
+
+/* flavour cup images  */
+  .header_teaflavourcup {
+    top: 340px;
+    padding: 5px;
+    overflow: auto;
+
+  }
+
+  .teacup_wrap {
+    padding: 5px;
+  }
+
+
+  /* header text animation  */
+  .header_text {
+    top: 150px;
+    margin-left: 120px;
+    font-size: 3rem;
+    animation: h_text_translate 2s ease-in-out;
+  }
+
+  @keyframes h_text_translate {
+    from {
+      margin-left: 0px;
+    }
+    to {
+      margin-left: 120px;
+    }
+  }
+
+
+}
+
+@media (max-width: 576px) {
+  nav button.navbar-toggler {
+    margin-right: 15px;
+  }
+
+  nav div .slide-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    position: fixed;
+    background: rgb(20, 7, 1);
+    top: 90px;
+    left: 5%;
+    width: 90%;
+    transition: all 0.5s ease;
+  }
+
+  img#logoImage {
+    width: 110px;
+    margin: 3px 20px 3px 20px;
+  }
+
+  nav ul li a.active {
+    border: none;
+    color: white;
+  }
+
+  nav ul li a:hover {
+    border: none;
+    color: white;
+    background-color: transparent;
+  }
+
+  nav.slide_down_black {
+    display: none;
+  }
+
+  img.flavour_header_image {
+    height: 65vw;
+  }
+
+
+/* flavour cup images  */
+  .header_teaflavourcup {
+    top: 260px;
+    overflow: auto;
+
+  }
+
+  .header_teaflavourcup img.adrak_teacup {
+    max-width: 180px;
+ 
+  }
+  
+  .header_teaflavourcup img.elaichi_teacup {
+    max-width: 180px;
+  }
+  
+  .header_teaflavourcup img.coffee_teacup {
+    max-width: 180px;
+
+  }
+  
+  .header_teaflavourcup img.masbun_teacup {
+    max-width: 180px;
+
+  }
+    
+
+
+  /* header text animation  */
+  .header_text {
+    top: 130px;
+    margin-left: 75px;
+    font-size: 2.7rem;
+    animation: h_text_translate 2s ease-in-out;
+  }
+
+  @keyframes h_text_translate {
+    from {
+      margin-left: 0px;
+    }
+    to {
+      margin-left: 75px;
+    }
+  }
+
+}
+
+@media (max-width: 425px) {
+  nav button.navbar-toggler {
+    margin-right: 15px;
+  }
+
+  nav div .slide-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    position: fixed;
+    background: rgb(20, 7, 1);
+    top: 80px;
+    left: 5%;
+    width: 90%;
+    transition: all 0.5s ease;
+  }
+
+  img#logoImage {
+    width: 100px;
+    margin: 2px 15px 2px 15px;
+  }
+
+  nav ul li a.active {
+    border: none;
+    color: white;
+  }
+
+  nav ul li a:hover {
+    border: none;
+    color: white;
+    background-color: transparent;
+  }
+
+  nav.slide_down_black {
+    display: none;
+  }
+
+  img.flavour_header_image {
+    height: 75vw;
+  }
+
+
+/* flavour cup images  */
+  .header_teaflavourcup {
+    top: 220px;
+    overflow: auto;;
+    padding-left: 50px;
+  }
+
+  .header_teaflavourcup img.adrak_teacup {
+    max-width: 110px;
+ 
+  }
+  
+  .header_teaflavourcup img.elaichi_teacup {
+    max-width: 110px;
+  }
+  
+  .header_teaflavourcup img.coffee_teacup {
+    max-width: 110px;
+
+  }
+  
+  .header_teaflavourcup img.masbun_teacup {
+    max-width: 110px;
+
+  }
+    
+
+
+  /* header text animation  */
+  .header_text {
+    top: 120px;
+    margin-left: 60px;
+    font-size: 1.8rem;
+    animation: h_text_translate 2s ease-in-out;
+  }
+
+  @keyframes h_text_translate {
+    from {
+      margin-left: 0px;
+    }
+    to {
+      margin-left: 60px;
+    }
+  }
+
+}
+
+@media (max-width: 375px) {
+  nav button.navbar-toggler {
+    margin-right: 15px;
+  }
+
+  nav div .slide-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    position: fixed;
+    background: rgb(20, 7, 1);
+    top: 75px;
+    left: 5%;
+    width: 90%;
+    transition: all 0.5s ease;
+  }
+
+  img#logoImage {
+    width: 90px;
+    margin: 2px 15px 2px 15px;
+  }
+
+  nav ul li a.active {
+    border: none;
+    color: white;
+  }
+
+  nav ul li a:hover {
+    border: none;
+    color: white;
+    background-color: transparent;
+  }
+
+  nav.slide_down_black {
+    display: none;
+  }
+
+  img.flavour_header_image {
+    height: 85vw;
+  }
+
+
+/* flavour cup images  */
+  .header_teaflavourcup {
+    top: 225px;
+    overflow: auto;;
+    padding-left: 60px;
+  }
+
+  .header_teaflavourcup img.adrak_teacup {
+    max-width: 100px;
+ 
+  }
+  
+  .header_teaflavourcup img.elaichi_teacup {
+    max-width: 100px;
+  }
+  
+  .header_teaflavourcup img.coffee_teacup {
+    max-width: 100px;
+
+  }
+  
+  .header_teaflavourcup img.masbun_teacup {
+    max-width: 100px;
+
+  }
+    
+
+  /* header text animation  */
+  .header_text {
+    top: 120px;
+    margin-left: 40px;
+    font-size: 1.7rem;
+    animation: h_text_translate 2s ease-in-out;
+  }
+
+  @keyframes h_text_translate {
+    from {
+      margin-left: 0px;
+    }
+    to {
+      margin-left: 40px;
+    }
+  }
+}
